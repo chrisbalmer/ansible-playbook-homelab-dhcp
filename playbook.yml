@@ -1,0 +1,6 @@
+- name: Install DHCP Servers
+  hosts: dhcp
+  gather_facts: yes
+  become: yes
+  roles:
+    - chrisbalmer.ansible-isc-dhcp
